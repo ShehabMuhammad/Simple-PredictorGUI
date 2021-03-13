@@ -17,7 +17,6 @@ class Predictor():
         self.width = 200;
         self.subjects = open("subjects.txt", "r").read().split("\n");
         self.height = 200;
-        self.faceSpace = np.empty([self.width, self.height, 3])
     def Get(self):
         self.ld = askopenfilename();
         if self.ld != None and self.ld != "":
